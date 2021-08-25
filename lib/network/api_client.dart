@@ -8,7 +8,7 @@ import '../util/request_type_exception.dart';
 
 class ApiClient {
   //Base url
-  static const String _apiURL='https://cums.the-v.net/site.aspx';
+  static  Uri _apiURL= Uri.parse('https://cums.the-v.net/site.aspx');
   
   final Client _client;
 
@@ -19,12 +19,12 @@ class ApiClient {
     switch (requestType) {
       
       case RequestType.GET:
-        return await _client.get("$_apiURL");
+        return await _client.get(_apiURL);
       case RequestType.POST:
-        return await _client.post("$_apiURL",
+        return await _client.post(_apiURL,
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: body);
       case RequestType.DELETE:
-        return await _client.delete("$_apiURL");
+        return await _client.delete(_apiURL);
       default:
         return throw RequestTypeNotFoundException("The HTTP request mentioned is not found");
     }

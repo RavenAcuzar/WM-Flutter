@@ -84,9 +84,7 @@ class _HomePageState extends State<HomePage> {
                               padding: EdgeInsets.all(20),
                               disabledColor: Color.fromARGB(100, 13, 58, 121),
                               disabledTextColor: Colors.white,
-                              onPressed: _userService.getUserId() != null
-                                  ? () => _apiResp.getVideoList(false)
-                                  : null,
+                              onPressed:  () => _apiResp.getVideoList(false),
                               child: Text('LOAD MORE')),
                         ),
                       ],
