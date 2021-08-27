@@ -1,4 +1,5 @@
 <img src="https://github.com/RavenAcuzar/WM-Flutter/blob/master/android/app/src/main/ic_launcher-playstore.png" width="10%">
+
 # Chief's Wednesday Message
 
 This app offers you all the episodes of Chief Pathman Senathirajah’s weekly Wednesday Message. Reach your true human potential by acting upon the lessons that he regularly shares within the network. Download the app now, and get your weekly dose of valuable networking, and life tips.
